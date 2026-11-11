@@ -1,2 +1,5 @@
+
 node_modules/
-model.js
+*.js.map
+*.d.ts
+*.d.ts.map
