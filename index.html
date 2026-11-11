@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <header>
+            <p class="greeting">YOUR PERSONAL WORKSPACE</p>
+            <h1>FocusFlow<span>.</span></h1>
+            <p class="subtitle">Small steps. Big progress.</p>
+        </header>
+
+        <section class="task-input">
+            <input
+                type="text"
+                id="title"
+                placeholder="What needs to get done?"
+            >
+            <button id="add-btn">Add task +</button>
+        </section>
+
+        <section class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="todo">To do</button>
+            <button class="filter-btn" data-filter="in-progress">In progress</button>
+            <button class="filter-btn" data-filter="done">Done</button>
+        </section>
+
+        <section class="tasks-section">
+            <div class="list-heading">
+                <h2>My Tasks</h2>
+                <span id="task-count">0 tasks</span>
+            </div>
+
+            <ul id="task-list"></ul>
+        </section>
+
+        <footer>
+            Built with focus. Powered by TypeScript.
+        </footer>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
